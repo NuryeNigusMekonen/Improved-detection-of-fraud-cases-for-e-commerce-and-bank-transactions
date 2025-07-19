@@ -1,0 +1,4 @@
+CR-venv/
+*.csv
+*.log
+*.parquet
