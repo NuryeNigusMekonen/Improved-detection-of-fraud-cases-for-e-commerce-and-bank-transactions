@@ -1,7 +1,15 @@
 from sklearn.ensemble import RandomForestClassifier
+import pandas as pd
+import numpy as np  
+def calculate_transaction_risk(df):
+    features = ["purchase_value", "time_to_purchase", "high_value_transaction", "device_transaction_count"]
+    df = df.copy()
+    df["transaction_risk"] = df[features].apply(lambda row: sum(row), axis=1)
+    return df
 
-def compute_fraud_risk_score(X_train, y_train, X_test):
-    model = RandomForestClassifier(n_estimators=100, random_state=42)
-    model.fit(X_train, y_train)
-    risk_scores = model.predict_proba(X_test)[:, 1]  # probability of fraud
-    return risk_scores
+def assign_risk_score(df):
+    df = df.copy()
+    bins = [-float('inf'), 50, 150, 300, float('inf')]
+    labels = ["Low", "Medium", "High", "Critical"]
+    df["risk_score_label"] = pd.cut(df["transaction_risk"], bins=bins, labels=labels)
+    return df
