@@ -55,11 +55,12 @@ Our goals were:
 
 ---
 # sample images
-## 🔍 Sample SHAP Summary Plot  
+##  Sample Plot  
 
 ![box plot Summary](reports/figures/bivariant/amount_vs_class.png)
 ![heatmap Summary](reports/figures/bivariant/correlation_heatmap.png)
 ![fraud rate browser](reports/figures/eda/fraud_rate_browser.png)
+![shap](reports/plots/shap.png)
 ---
 
 ###  Model Explainability
