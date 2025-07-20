@@ -2,3 +2,5 @@ CR-venv/
 *.csv
 *.log
 *.parquet
+*.pkl
+*.npz
