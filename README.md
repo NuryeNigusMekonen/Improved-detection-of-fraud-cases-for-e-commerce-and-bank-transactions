@@ -54,6 +54,13 @@ Our goals were:
 * Performance Metrics: **Accuracy, Precision, Recall, F1-Score**
 
 ---
+# sample images
+## 🔍 Sample SHAP Summary Plot  
+
+![box plot Summary](reports/figures/bivariant/amount_vs_class.png)
+![heatmap Summary](reports/figures/bivariant/correlation_heatmap.png)
+![fraud rate browser](reports/figures/eda/fraud_rate_browser.png)
+---
 
 ###  Model Explainability
 
@@ -79,7 +86,6 @@ Our goals were:
 * E-Commerce fraud is harder to predict than credit card fraud due to noisier data
 
 ---
-
 ## develped by 
 Nurye Nigus 
 +251929404324
