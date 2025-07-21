@@ -60,7 +60,7 @@ Our goals were:
 ![box plot Summary](reports/figures/bivariant/amount_vs_class.png)
 ![heatmap Summary](reports/figures/bivariant/correlation_heatmap.png)
 ![fraud rate browser](reports/figures/eda/fraud_rate_browser.png)
-![shap](reports/plots/shap.png)
+![shap](reports/plots/credit_card.png)
 ---
 
 ###  Model Explainability
